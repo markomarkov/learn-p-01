@@ -1,0 +1,10 @@
+
+
+npm install -g @nrwl/cli
+
+npx create-nx-workspace@latest
+
+npm i -g nx
+
+nvm ls
+
