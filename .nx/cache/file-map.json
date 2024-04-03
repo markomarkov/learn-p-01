@@ -1,0 +1,181 @@
+{
+  "version": "6.0",
+  "nxVersion": "18.2.2",
+  "deps": {},
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "apps-e2e": [
+        {
+          "file": "my-apps/apps/apps-e2e/.eslintrc.json",
+          "hash": "12312091713424603791"
+        },
+        {
+          "file": "my-apps/apps/apps-e2e/jest.config.ts",
+          "hash": "6831190042149966671"
+        },
+        {
+          "file": "my-apps/apps/apps-e2e/project.json",
+          "hash": "2192981250921439088"
+        },
+        {
+          "file": "my-apps/apps/apps-e2e/src/apps/apps.spec.ts",
+          "hash": "2017613395748408322"
+        },
+        {
+          "file": "my-apps/apps/apps-e2e/src/support/global-setup.ts",
+          "hash": "2115715198266229230"
+        },
+        {
+          "file": "my-apps/apps/apps-e2e/src/support/global-teardown.ts",
+          "hash": "8548088892264703398"
+        },
+        {
+          "file": "my-apps/apps/apps-e2e/src/support/test-setup.ts",
+          "hash": "7089735238924345502"
+        },
+        {
+          "file": "my-apps/apps/apps-e2e/tsconfig.json",
+          "hash": "1422418700492434985"
+        },
+        {
+          "file": "my-apps/apps/apps-e2e/tsconfig.spec.json",
+          "hash": "15391097975841359511"
+        }
+      ],
+      "apps": [
+        {
+          "file": "my-apps/apps/apps/.eslintrc.json",
+          "hash": "12312091713424603791"
+        },
+        {
+          "file": "my-apps/apps/apps/jest.config.ts",
+          "hash": "3731670811986974373"
+        },
+        {
+          "file": "my-apps/apps/apps/project.json",
+          "hash": "12381735228307298447"
+        },
+        {
+          "file": "my-apps/apps/apps/src/app/app.controller.spec.ts",
+          "hash": "17927345866605086850"
+        },
+        {
+          "file": "my-apps/apps/apps/src/app/app.controller.ts",
+          "hash": "8194742152470293406"
+        },
+        {
+          "file": "my-apps/apps/apps/src/app/app.module.ts",
+          "hash": "6267817688893699713"
+        },
+        {
+          "file": "my-apps/apps/apps/src/app/app.service.spec.ts",
+          "hash": "12030387138390094050"
+        },
+        {
+          "file": "my-apps/apps/apps/src/app/app.service.ts",
+          "hash": "8422121253670037094"
+        },
+        {
+          "file": "my-apps/apps/apps/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "my-apps/apps/apps/src/main.ts",
+          "hash": "1740112978797169791"
+        },
+        {
+          "file": "my-apps/apps/apps/tsconfig.app.json",
+          "hash": "2475386244281766571"
+        },
+        {
+          "file": "my-apps/apps/apps/tsconfig.json",
+          "hash": "7462419380158041776"
+        },
+        {
+          "file": "my-apps/apps/apps/tsconfig.spec.json",
+          "hash": "11194536110028348959"
+        },
+        {
+          "file": "my-apps/apps/apps/webpack.config.js",
+          "hash": "16337669204357183136"
+        }
+      ]
+    },
+    "nonProjectFiles": [
+      {
+        "file": ".gitignore",
+        "hash": "18318511172391054080"
+      },
+      {
+        "file": "LICENSE",
+        "hash": "9820282292072377027"
+      },
+      {
+        "file": "README.md",
+        "hash": "3587719194622145927"
+      },
+      {
+        "file": "my-apps/.editorconfig",
+        "hash": "11532813898455409296"
+      },
+      {
+        "file": "my-apps/.eslintignore",
+        "hash": "13404745306227114823"
+      },
+      {
+        "file": "my-apps/.eslintrc.json",
+        "hash": "890891562086050270"
+      },
+      {
+        "file": "my-apps/.gitignore",
+        "hash": "8006173599923703420"
+      },
+      {
+        "file": "my-apps/.prettierignore",
+        "hash": "2687824826588932174"
+      },
+      {
+        "file": "my-apps/.prettierrc",
+        "hash": "6820402234827505055"
+      },
+      {
+        "file": "my-apps/.vscode/extensions.json",
+        "hash": "60901680939730831"
+      },
+      {
+        "file": "my-apps/README.md",
+        "hash": "15400324972817836278"
+      },
+      {
+        "file": "my-apps/jest.config.ts",
+        "hash": "235941158682921621"
+      },
+      {
+        "file": "my-apps/jest.preset.js",
+        "hash": "8767326693602577865"
+      },
+      {
+        "file": "my-apps/nx.json",
+        "hash": "15943714868117488986"
+      },
+      {
+        "file": "my-apps/package-lock.json",
+        "hash": "4714108479209632903"
+      },
+      {
+        "file": "my-apps/package.json",
+        "hash": "17107786539237948949"
+      },
+      {
+        "file": "my-apps/tsconfig.base.json",
+        "hash": "14630015026640650062"
+      },
+      {
+        "file": "myComands.txt",
+        "hash": "1331559809220361392"
+      }
+    ]
+  }
+}

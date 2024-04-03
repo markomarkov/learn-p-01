@@ -1,0 +1,73 @@
+{
+  "nodes": {
+    "apps-e2e": {
+      "name": "apps-e2e",
+      "type": "e2e",
+      "data": {
+        "root": "my-apps/apps/apps-e2e",
+        "name": "apps-e2e",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "projectType": "application",
+        "implicitDependencies": [
+          "apps"
+        ],
+        "targets": {
+          "e2e": {
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{e2eProjectRoot}"
+            ],
+            "options": {
+              "jestConfig": "apps/apps-e2e/jest.config.ts",
+              "passWithNoTests": true
+            },
+            "configurations": {}
+          }
+        },
+        "tags": []
+      }
+    },
+    "apps": {
+      "name": "apps",
+      "type": "app",
+      "data": {
+        "root": "my-apps/apps/apps",
+        "name": "apps",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "apps/apps/src",
+        "projectType": "application",
+        "tags": [],
+        "targets": {
+          "serve": {
+            "executor": "@nx/js:node",
+            "defaultConfiguration": "development",
+            "options": {
+              "buildTarget": "apps:build"
+            },
+            "configurations": {
+              "development": {
+                "buildTarget": "apps:build:development"
+              },
+              "production": {
+                "buildTarget": "apps:build:production"
+              }
+            }
+          }
+        },
+        "implicitDependencies": []
+      }
+    }
+  },
+  "externalNodes": {},
+  "dependencies": {
+    "apps-e2e": [
+      {
+        "source": "apps-e2e",
+        "target": "apps",
+        "type": "implicit"
+      }
+    ],
+    "apps": []
+  },
+  "version": "6.0"
+}
