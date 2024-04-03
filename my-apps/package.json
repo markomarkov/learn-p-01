@@ -1,8 +1,21 @@
 {
   "name": "@my-apps/source",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
-  "scripts": {},
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "scripts": {
+    "preinstall": "npx -y only-allow pnpm",
+    "build-all": "nx run-many --target=build --all",
+    "serve-all": "nx run-many --target=serve --all",
+    "lint": "pnpm run eslint:check && pnpm run prettier:check",
+    "prettier:format": "pnpm exec prettier --write ./apps/**/src/**",
+    "prettier:check": "pnpm exec prettier -c ./apps/**/src/**",
+    "eslint:format": "pnpm exec eslint --fix ./apps/**/src/**",
+    "eslint:check": "pnpm exec eslint ./apps/**/src/**"
+  },
   "private": true,
   "dependencies": {
     "@nestjs/common": "^10.0.2",
