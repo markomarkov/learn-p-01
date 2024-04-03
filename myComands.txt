@@ -1,11 +1,14 @@
 
 
 npm install -g @nrwl/cli
+npm install -g pnpm
+npm i -g nx
 
 npx create-nx-workspace@latest
 
-npm i -g nx
-
 nvm ls
+npm ls -g
 
 npx nx graph
+nx graph --file=output.json
+
