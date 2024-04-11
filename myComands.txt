@@ -12,3 +12,9 @@ npm ls -g
 npx nx graph
 nx graph --file=output.json
 
+
+
+
+
+NX Console
+@nestjs/schematics  --to add libs\**
