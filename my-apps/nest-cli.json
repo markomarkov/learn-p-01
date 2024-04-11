@@ -8,9 +8,31 @@
       "compilerOptions": {
         "tsConfigPath": "libs/my-lib-nest/tsconfig.lib.json"
       }
+    },
+    "my-apps-source": {
+      "type": "application",
+      "root": "apps/my-apps-source",
+      "entryFile": "main",
+      "sourceRoot": "apps/my-apps-source/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/my-apps-source/tsconfig.app.json"
+      }
+    },
+    "app2": {
+      "type": "application",
+      "root": "apps/app2",
+      "entryFile": "main",
+      "sourceRoot": "apps/app2/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/app2/tsconfig.app.json"
+      }
     }
   },
   "compilerOptions": {
-    "webpack": true
-  }
+    "webpack": true,
+    "tsConfigPath": "apps/my-apps-source/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/my-apps-source",
+  "sourceRoot": "apps/my-apps-source/src"
 }
