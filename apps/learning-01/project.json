@@ -1,0 +1,24 @@
+{
+  "name": "learning-01",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/learning-01/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "learning-01:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "learning-01:build:development"
+        },
+        "production": {
+          "buildTarget": "learning-01:build:production"
+        }
+      }
+    }
+  }
+}
