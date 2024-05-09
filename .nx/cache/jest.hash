@@ -1,10 +1,10 @@
 {
-  "8522906907563285028": {
+  "9928495903671993386": {
     "targets": {
       "test": {
         "command": "jest",
         "options": {
-          "cwd": "apps/aaa/aa"
+          "cwd": "apps/game-state-service"
         },
         "metadata": {
           "technologies": [
@@ -23,7 +23,7 @@
           }
         ],
         "outputs": [
-          "{workspaceRoot}\\coverage\\apps\\--destination=.\\apps"
+          "{workspaceRoot}\\coverage\\apps\\game-state-service"
         ]
       }
     }
@@ -53,35 +53,6 @@
         ],
         "outputs": [
           "{workspaceRoot}\\coverage\\apps\\learning-01"
-        ]
-      }
-    }
-  },
-  "13957115598591182444": {
-    "targets": {
-      "test": {
-        "command": "jest",
-        "options": {
-          "cwd": "libs/state-service-sdk"
-        },
-        "metadata": {
-          "technologies": [
-            "jest"
-          ],
-          "description": "Run Jest Tests"
-        },
-        "cache": true,
-        "inputs": [
-          "default",
-          "^production",
-          {
-            "externalDependencies": [
-              "jest"
-            ]
-          }
-        ],
-        "outputs": [
-          "{workspaceRoot}\\libs\\coverage\\state-service-sdk"
         ]
       }
     }

@@ -1,5 +1,125 @@
 {
   "nodes": {
+    "game-state-service": {
+      "name": "game-state-service",
+      "type": "app",
+      "data": {
+        "root": "apps/game-state-service",
+        "projectType": "application",
+        "targets": {
+          "build": {
+            "options": {
+              "cwd": "apps/game-state-service",
+              "args": [
+                "--node-env=production"
+              ],
+              "command": "webpack-cli build"
+            },
+            "cache": true,
+            "dependsOn": [
+              "^build"
+            ],
+            "inputs": [
+              "production",
+              "^production",
+              {
+                "externalDependencies": [
+                  "webpack-cli"
+                ]
+              }
+            ],
+            "outputs": [
+              "{workspaceRoot}/dist\\apps\\game-state-service"
+            ],
+            "executor": "nx:run-commands",
+            "configurations": {}
+          },
+          "serve": {
+            "options": {
+              "cwd": "apps/game-state-service",
+              "args": [
+                "--node-env=development"
+              ],
+              "command": "webpack-cli serve"
+            },
+            "executor": "nx:run-commands",
+            "configurations": {}
+          },
+          "preview": {
+            "options": {
+              "cwd": "apps/game-state-service",
+              "args": [
+                "--node-env=production"
+              ],
+              "command": "webpack-cli serve"
+            },
+            "executor": "nx:run-commands",
+            "configurations": {}
+          },
+          "serve-static": {
+            "executor": "@nx/web:file-server",
+            "options": {
+              "buildTarget": "build",
+              "spa": true
+            },
+            "configurations": {}
+          },
+          "lint": {
+            "cache": true,
+            "options": {
+              "cwd": "apps/game-state-service",
+              "command": "eslint ."
+            },
+            "inputs": [
+              "default",
+              "^default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{projectRoot}/.eslintrc.json",
+              "{workspaceRoot}/tools/eslint-rules/**/*",
+              {
+                "externalDependencies": [
+                  "eslint"
+                ]
+              }
+            ],
+            "executor": "nx:run-commands",
+            "configurations": {}
+          },
+          "test": {
+            "options": {
+              "cwd": "apps/game-state-service",
+              "command": "jest"
+            },
+            "metadata": {
+              "technologies": [
+                "jest"
+              ],
+              "description": "Run Jest Tests"
+            },
+            "cache": true,
+            "inputs": [
+              "default",
+              "^production",
+              {
+                "externalDependencies": [
+                  "jest"
+                ]
+              }
+            ],
+            "outputs": [
+              "{workspaceRoot}\\coverage\\apps\\game-state-service"
+            ],
+            "executor": "nx:run-commands",
+            "configurations": {}
+          }
+        },
+        "name": "game-state-service",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "apps/game-state-service/src",
+        "tags": [],
+        "implicitDependencies": []
+      }
+    },
     "learning-01-e2e": {
       "name": "learning-01-e2e",
       "type": "e2e",
@@ -10898,6 +11018,7 @@
     }
   },
   "dependencies": {
+    "game-state-service": [],
     "learning-01-e2e": [
       {
         "source": "learning-01-e2e",
