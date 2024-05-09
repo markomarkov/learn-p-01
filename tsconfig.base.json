@@ -14,7 +14,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@learn-p-01/state-service-sdk": ["state-service-sdk/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

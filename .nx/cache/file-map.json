@@ -2,43 +2,292 @@
   "version": "6.0",
   "nxVersion": "18.3.4",
   "deps": {
+    "@nestjs/common": "^10.0.2",
+    "@nestjs/core": "^10.0.2",
+    "@nestjs/platform-express": "^10.0.2",
+    "axios": "^1.6.7",
+    "core-js": "3.34.0",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.8.0",
+    "tslib": "^2.3.0",
+    "xstate": "5.9.1",
+    "@nestjs/schematics": "^10.0.1",
+    "@nestjs/testing": "^10.0.2",
+    "@nx/cypress": "18.3.4",
+    "@nx/eslint": "18.3.4",
+    "@nx/eslint-plugin": "18.3.4",
+    "@nx/jest": "18.3.4",
+    "@nx/js": "18.3.4",
+    "@nx/nest": "18.3.4",
     "@nx/node": "18.3.4",
+    "@nx/web": "18.3.4",
+    "@nx/webpack": "18.3.4",
     "@nx/workspace": "18.3.4",
-    "nx": "18.3.4"
+    "@swc-node/register": "~1.8.0",
+    "@swc/cli": "~0.1.62",
+    "@swc/core": "~1.3.85",
+    "@swc/helpers": "~0.5.2",
+    "@swc/jest": "0.2.20",
+    "@types/jest": "^29.4.0",
+    "@types/node": "~18.16.9",
+    "@typescript-eslint/eslint-plugin": "^7.3.0",
+    "@typescript-eslint/parser": "^7.3.0",
+    "cypress": "^13.6.6",
+    "eslint": "~8.57.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-cypress": "^2.13.4",
+    "jest": "^29.4.1",
+    "jest-environment-jsdom": "^29.4.1",
+    "jest-environment-node": "^29.4.1",
+    "nx": "18.3.4",
+    "prettier": "^3.1.1",
+    "swc-loader": "0.1.15",
+    "ts-jest": "^29.1.0",
+    "ts-node": "10.9.1",
+    "typescript": "~5.4.2",
+    "webpack-cli": "^5.1.4"
   },
-  "pathMappings": {},
-  "nxJsonPlugins": [],
+  "pathMappings": {
+    "@learn-p-01/state-service-sdk": [
+      "state-service-sdk/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/webpack/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "serveTargetName": "serve",
+        "previewTargetName": "preview"
+      }
+    },
+    {
+      "name": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    },
+    {
+      "name": "@nx/jest/plugin",
+      "options": {
+        "targetName": "test"
+      }
+    },
+    {
+      "name": "@nx/cypress/plugin",
+      "options": {
+        "targetName": "e2e",
+        "openTargetName": "open-cypress",
+        "componentTestingTargetName": "component-test",
+        "ciTargetName": "e2e-ci"
+      }
+    }
+  ],
   "fileMap": {
-    "projectFileMap": {},
     "nonProjectFiles": [
       {
         "file": ".editorconfig",
-        "hash": "5443105041930014821"
+        "hash": "11532813898455409296"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "13404745306227114823"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "890891562086050270"
       },
       {
         "file": ".gitignore",
-        "hash": "16877376182141465221"
+        "hash": "18318511172391054080"
+      },
+      {
+        "file": ".gitignore2",
+        "hash": "8006173599923703420"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "2687824826588932174"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "3395704049022104332"
       },
       {
         "file": ".vscode/extensions.json",
-        "hash": "3833545590435012078"
+        "hash": "15303740426934437843"
+      },
+      {
+        "file": ".vscode/settings.json",
+        "hash": "11183710784019236546"
+      },
+      {
+        "file": "LICENSE",
+        "hash": "9820282292072377027"
       },
       {
         "file": "README.md",
-        "hash": "2571084695251047685"
+        "hash": "11475842425547414904"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "235941158682921621"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "8767326693602577865"
+      },
+      {
+        "file": "myComands.txt",
+        "hash": "1335970910222259376"
       },
       {
         "file": "nx.json",
-        "hash": "14977852485590650733"
+        "hash": "14692996224245394188"
       },
       {
         "file": "package-lock.json",
-        "hash": "8692075012342604393"
+        "hash": "3119510459205884517"
       },
       {
         "file": "package.json",
-        "hash": "2177672938344318820"
+        "hash": "17641445218779427631"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "2392477739364604514"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "7338746126259414076"
       }
-    ]
+    ],
+    "projectFileMap": {
+      "learning-01": [
+        {
+          "file": "apps/learning-01/.eslintrc.json",
+          "hash": "12312091713424603791"
+        },
+        {
+          "file": "apps/learning-01/jest.config.ts",
+          "hash": "11215335503479334474"
+        },
+        {
+          "file": "apps/learning-01/project.json",
+          "hash": "16163387609117913676"
+        },
+        {
+          "file": "apps/learning-01/src/app/app.controller.spec.ts",
+          "hash": "17927345866605086850",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "apps/learning-01/src/app/app.controller.ts",
+          "hash": "8194742152470293406",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/learning-01/src/app/app.module.ts",
+          "hash": "6267817688893699713",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/learning-01/src/app/app.service.spec.ts",
+          "hash": "12030387138390094050",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "apps/learning-01/src/app/app.service.ts",
+          "hash": "8422121253670037094",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/learning-01/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/learning-01/src/main.ts",
+          "hash": "1740112978797169791",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/core"
+          ]
+        },
+        {
+          "file": "apps/learning-01/tsconfig.app.json",
+          "hash": "2475386244281766571"
+        },
+        {
+          "file": "apps/learning-01/tsconfig.json",
+          "hash": "7462419380158041776"
+        },
+        {
+          "file": "apps/learning-01/tsconfig.spec.json",
+          "hash": "11194536110028348959"
+        },
+        {
+          "file": "apps/learning-01/webpack.config.js",
+          "hash": "10991691899849727633",
+          "deps": [
+            "npm:@nx/webpack",
+            "npm:path"
+          ]
+        }
+      ],
+      "learning-01-e2e": [
+        {
+          "file": "apps/learning-01-e2e/.eslintrc.json",
+          "hash": "12312091713424603791"
+        },
+        {
+          "file": "apps/learning-01-e2e/jest.config.ts",
+          "hash": "6438141914064492554"
+        },
+        {
+          "file": "apps/learning-01-e2e/project.json",
+          "hash": "1738060370950468656"
+        },
+        {
+          "file": "apps/learning-01-e2e/src/learning-01/learning-01.spec.ts",
+          "hash": "2017613395748408322",
+          "deps": [
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "apps/learning-01-e2e/src/support/global-setup.ts",
+          "hash": "2115715198266229230"
+        },
+        {
+          "file": "apps/learning-01-e2e/src/support/global-teardown.ts",
+          "hash": "8548088892264703398"
+        },
+        {
+          "file": "apps/learning-01-e2e/src/support/test-setup.ts",
+          "hash": "7089735238924345502",
+          "deps": [
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "apps/learning-01-e2e/tsconfig.json",
+          "hash": "1422418700492434985"
+        },
+        {
+          "file": "apps/learning-01-e2e/tsconfig.spec.json",
+          "hash": "15391097975841359511"
+        }
+      ]
+    }
   }
 }
