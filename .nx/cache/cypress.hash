@@ -1,1 +1,44 @@
-{}
+{
+  "8958485664898701916": {
+    "targets": {
+      "e2e": {
+        "command": "cypress run",
+        "options": {
+          "cwd": "apps/game-state-service-e2e"
+        },
+        "cache": true,
+        "inputs": [
+          "default",
+          "^production",
+          {
+            "externalDependencies": [
+              "cypress"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/cypress/apps/game-state-service-e2e/videos",
+          "{workspaceRoot}/dist/cypress/apps/game-state-service-e2e/screenshots"
+        ],
+        "metadata": {
+          "technologies": [
+            "cypress"
+          ],
+          "description": "Runs Cypress Tests"
+        }
+      },
+      "open-cypress": {
+        "command": "cypress open",
+        "options": {
+          "cwd": "apps/game-state-service-e2e"
+        },
+        "metadata": {
+          "technologies": [
+            "cypress"
+          ],
+          "description": "Opens Cypress"
+        }
+      }
+    }
+  }
+}
