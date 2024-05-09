@@ -86,83 +86,157 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": ".editorconfig",
-        "hash": "11532813898455409296"
-      },
-      {
-        "file": ".eslintignore",
-        "hash": "13404745306227114823"
-      },
-      {
-        "file": ".eslintrc.json",
-        "hash": "890891562086050270"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "18318511172391054080"
-      },
-      {
-        "file": ".gitignore2",
-        "hash": "8006173599923703420"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "2687824826588932174"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "3395704049022104332"
+        "file": "tsconfig.base.json",
+        "hash": "7338746126259414076"
       },
       {
         "file": ".vscode/extensions.json",
         "hash": "15303740426934437843"
       },
       {
-        "file": ".vscode/settings.json",
-        "hash": "11183710784019236546"
-      },
-      {
-        "file": "LICENSE",
-        "hash": "9820282292072377027"
-      },
-      {
-        "file": "README.md",
-        "hash": "11475842425547414904"
-      },
-      {
-        "file": "jest.config.ts",
-        "hash": "235941158682921621"
-      },
-      {
-        "file": "jest.preset.js",
-        "hash": "8767326693602577865"
-      },
-      {
-        "file": "myComands.txt",
-        "hash": "1335970910222259376"
-      },
-      {
-        "file": "nx.json",
-        "hash": "14692996224245394188"
+        "file": ".gitignore2",
+        "hash": "8006173599923703420"
       },
       {
         "file": "package-lock.json",
         "hash": "3119510459205884517"
       },
       {
-        "file": "package.json",
-        "hash": "17641445218779427631"
+        "file": "README.md",
+        "hash": "11475842425547414904"
+      },
+      {
+        "file": "nx.json",
+        "hash": "17534365334411485342"
+      },
+      {
+        "file": "LICENSE",
+        "hash": "9820282292072377027"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "11532813898455409296"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "8767326693602577865"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "3395704049022104332"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "890891562086050270"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "235941158682921621"
       },
       {
         "file": "pnpm-lock.yaml",
-        "hash": "2392477739364604514"
+        "hash": "13397676895642300840"
       },
       {
-        "file": "tsconfig.base.json",
-        "hash": "7338746126259414076"
+        "file": ".eslintignore",
+        "hash": "13404745306227114823"
+      },
+      {
+        "file": ".vscode/settings.json",
+        "hash": "11183710784019236546"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "18318511172391054080"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "2687824826588932174"
+      },
+      {
+        "file": "myComands.txt",
+        "hash": "1335970910222259376"
+      },
+      {
+        "file": "package.json",
+        "hash": "16399452142351553542"
       }
     ],
     "projectFileMap": {
+      "game-state-service": [
+        {
+          "file": "apps/game-state-service/.eslintrc.json",
+          "hash": "14921153827776288937"
+        },
+        {
+          "file": "apps/game-state-service/.swcrc",
+          "hash": "9448684243471363461"
+        },
+        {
+          "file": "apps/game-state-service/jest.config.ts",
+          "hash": "14819320378457985846"
+        },
+        {
+          "file": "apps/game-state-service/project.json",
+          "hash": "11955645881119731063"
+        },
+        {
+          "file": "apps/game-state-service/src/app/app.element.css",
+          "hash": "8896620862805756811"
+        },
+        {
+          "file": "apps/game-state-service/src/app/app.element.spec.ts",
+          "hash": "10340014775905134236"
+        },
+        {
+          "file": "apps/game-state-service/src/app/app.element.ts",
+          "hash": "16304159469867294186"
+        },
+        {
+          "file": "apps/game-state-service/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/game-state-service/src/index.html",
+          "hash": "14606528721039180005"
+        },
+        {
+          "file": "apps/game-state-service/src/main.ts",
+          "hash": "7089803718854622436"
+        },
+        {
+          "file": "apps/game-state-service/src/styles.css",
+          "hash": "2917954890128038984"
+        },
+        {
+          "file": "apps/game-state-service/src/test-setup.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/game-state-service/tsconfig.app.json",
+          "hash": "8560610324945985469"
+        },
+        {
+          "file": "apps/game-state-service/tsconfig.json",
+          "hash": "8036392501322474590"
+        },
+        {
+          "file": "apps/game-state-service/tsconfig.spec.json",
+          "hash": "2930041746242100632"
+        },
+        {
+          "file": "apps/game-state-service/webpack.config.js",
+          "hash": "7729000402195314189",
+          "deps": [
+            "npm:@nx/webpack",
+            "npm:path"
+          ]
+        },
+        {
+          "file": "apps/game-state-service/src/favicon.ico",
+          "hash": "9303420814833116677"
+        }
+      ],
       "learning-01": [
         {
           "file": "apps/learning-01/.eslintrc.json",
@@ -286,80 +360,6 @@
         {
           "file": "apps/learning-01-e2e/tsconfig.spec.json",
           "hash": "15391097975841359511"
-        }
-      ],
-      "game-state-service": [
-        {
-          "file": "apps/game-state-service/.eslintrc.json",
-          "hash": "13800677001662881425"
-        },
-        {
-          "file": "apps/game-state-service/.swcrc",
-          "hash": "9921579498929141427"
-        },
-        {
-          "file": "apps/game-state-service/jest.config.ts",
-          "hash": "494307359428274449"
-        },
-        {
-          "file": "apps/game-state-service/project.json",
-          "hash": "8238377833712724656"
-        },
-        {
-          "file": "apps/game-state-service/src/app/app.element.css",
-          "hash": "8664708101469823044"
-        },
-        {
-          "file": "apps/game-state-service/src/app/app.element.spec.ts",
-          "hash": "278313511986712192"
-        },
-        {
-          "file": "apps/game-state-service/src/app/app.element.ts",
-          "hash": "2698987456370557315"
-        },
-        {
-          "file": "apps/game-state-service/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/game-state-service/src/favicon.ico",
-          "hash": "9303420814833116677"
-        },
-        {
-          "file": "apps/game-state-service/src/index.html",
-          "hash": "6993391883690885887"
-        },
-        {
-          "file": "apps/game-state-service/src/main.ts",
-          "hash": "466268443977743393"
-        },
-        {
-          "file": "apps/game-state-service/src/styles.css",
-          "hash": "5195668842064076916"
-        },
-        {
-          "file": "apps/game-state-service/src/test-setup.ts",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/game-state-service/tsconfig.app.json",
-          "hash": "11535403879951844665"
-        },
-        {
-          "file": "apps/game-state-service/tsconfig.json",
-          "hash": "9214820933160915425"
-        },
-        {
-          "file": "apps/game-state-service/tsconfig.spec.json",
-          "hash": "1779110203487732246"
-        },
-        {
-          "file": "apps/game-state-service/webpack.config.js",
-          "hash": "9442553221235332799",
-          "deps": [
-            "npm:@nx/webpack",
-            "npm:path"
-          ]
         }
       ]
     }

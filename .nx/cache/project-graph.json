@@ -8,31 +8,23 @@
         "projectType": "application",
         "targets": {
           "build": {
-            "options": {
-              "cwd": "apps/game-state-service",
-              "args": [
-                "--node-env=production"
-              ],
-              "command": "webpack-cli build"
-            },
-            "cache": true,
-            "dependsOn": [
-              "^build"
-            ],
-            "inputs": [
-              "production",
-              "^production",
-              {
-                "externalDependencies": [
-                  "webpack-cli"
-                ]
-              }
-            ],
+            "executor": "@nx/webpack:webpack",
             "outputs": [
-              "{workspaceRoot}/dist\\apps\\game-state-service"
+              "{options.outputPath}"
             ],
-            "executor": "nx:run-commands",
-            "configurations": {}
+            "defaultConfiguration": "production",
+            "options": {
+              "target": "node",
+              "compiler": "tsc",
+              "outputPath": "dist/apps/game-state-service",
+              "main": "apps/game-state-service/src/main.ts",
+              "tsConfig": "apps/game-state-service/tsconfig.app.json",
+              "webpackConfig": "apps/game-state-service/webpack.config.js"
+            },
+            "configurations": {
+              "development": {},
+              "production": {}
+            }
           },
           "serve": {
             "options": {
