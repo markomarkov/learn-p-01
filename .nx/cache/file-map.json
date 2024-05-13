@@ -59,9 +59,6 @@
     ],
     "@learn-p-01/state-service-lib": [
       "libs/state-service-lib/src/index.ts"
-    ],
-    "@learn-p-01/state-service-sdk": [
-      "state-service-sdk/src/index.ts"
     ]
   },
   "nxJsonPlugins": [
@@ -97,6 +94,87 @@
   ],
   "fileMap": {
     "projectFileMap": {
+      "learning-01": [
+        {
+          "file": "apps/learning-01/.eslintrc.json",
+          "hash": "12312091713424603791"
+        },
+        {
+          "file": "apps/learning-01/jest.config.ts",
+          "hash": "11215335503479334474"
+        },
+        {
+          "file": "apps/learning-01/project.json",
+          "hash": "16163387609117913676"
+        },
+        {
+          "file": "apps/learning-01/src/app/app.controller.spec.ts",
+          "hash": "17927345866605086850",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "apps/learning-01/src/app/app.controller.ts",
+          "hash": "8194742152470293406",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/learning-01/src/app/app.module.ts",
+          "hash": "6267817688893699713",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/learning-01/src/app/app.service.spec.ts",
+          "hash": "12030387138390094050",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "apps/learning-01/src/app/app.service.ts",
+          "hash": "8422121253670037094",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/learning-01/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/learning-01/src/main.ts",
+          "hash": "1740112978797169791",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/core"
+          ]
+        },
+        {
+          "file": "apps/learning-01/tsconfig.app.json",
+          "hash": "2475386244281766571"
+        },
+        {
+          "file": "apps/learning-01/tsconfig.json",
+          "hash": "7462419380158041776"
+        },
+        {
+          "file": "apps/learning-01/tsconfig.spec.json",
+          "hash": "11194536110028348959"
+        },
+        {
+          "file": "apps/learning-01/webpack.config.js",
+          "hash": "10991691899849727633",
+          "deps": [
+            "npm:@nx/webpack",
+            "npm:path"
+          ]
+        }
+      ],
       "game-state-service": [
         {
           "file": "apps/game-state-service/.eslintrc.json",
@@ -236,87 +314,6 @@
         {
           "file": "apps/learning-01-e2e/tsconfig.spec.json",
           "hash": "15391097975841359511"
-        }
-      ],
-      "learning-01": [
-        {
-          "file": "apps/learning-01/.eslintrc.json",
-          "hash": "12312091713424603791"
-        },
-        {
-          "file": "apps/learning-01/jest.config.ts",
-          "hash": "11215335503479334474"
-        },
-        {
-          "file": "apps/learning-01/project.json",
-          "hash": "16163387609117913676"
-        },
-        {
-          "file": "apps/learning-01/src/app/app.controller.spec.ts",
-          "hash": "17927345866605086850",
-          "deps": [
-            "npm:@nestjs/testing"
-          ]
-        },
-        {
-          "file": "apps/learning-01/src/app/app.controller.ts",
-          "hash": "8194742152470293406",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "apps/learning-01/src/app/app.module.ts",
-          "hash": "6267817688893699713",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "apps/learning-01/src/app/app.service.spec.ts",
-          "hash": "12030387138390094050",
-          "deps": [
-            "npm:@nestjs/testing"
-          ]
-        },
-        {
-          "file": "apps/learning-01/src/app/app.service.ts",
-          "hash": "8422121253670037094",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "apps/learning-01/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/learning-01/src/main.ts",
-          "hash": "1740112978797169791",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/core"
-          ]
-        },
-        {
-          "file": "apps/learning-01/tsconfig.app.json",
-          "hash": "2475386244281766571"
-        },
-        {
-          "file": "apps/learning-01/tsconfig.json",
-          "hash": "7462419380158041776"
-        },
-        {
-          "file": "apps/learning-01/tsconfig.spec.json",
-          "hash": "11194536110028348959"
-        },
-        {
-          "file": "apps/learning-01/webpack.config.js",
-          "hash": "10991691899849727633",
-          "deps": [
-            "npm:@nx/webpack",
-            "npm:path"
-          ]
         }
       ]
     },

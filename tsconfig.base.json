@@ -17,7 +17,6 @@
     "paths": {
       "@learn-p-01/shared": ["libs/shared/src/index.ts"],
       "@learn-p-01/state-service-lib": ["libs/state-service-lib/src/index.ts"],
-      "@learn-p-01/state-service-sdk": ["state-service-sdk/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
