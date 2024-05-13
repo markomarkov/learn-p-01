@@ -112,6 +112,69 @@
         "implicitDependencies": []
       }
     },
+    "state-service-lib": {
+      "name": "state-service-lib",
+      "type": "lib",
+      "data": {
+        "root": "libs/state-service-lib",
+        "targets": {
+          "lint": {
+            "cache": true,
+            "options": {
+              "cwd": "libs/state-service-lib",
+              "command": "eslint ."
+            },
+            "inputs": [
+              "default",
+              "^default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{projectRoot}/.eslintrc.json",
+              "{workspaceRoot}/tools/eslint-rules/**/*",
+              {
+                "externalDependencies": [
+                  "eslint"
+                ]
+              }
+            ],
+            "executor": "nx:run-commands",
+            "configurations": {}
+          },
+          "test": {
+            "options": {
+              "cwd": "libs/state-service-lib",
+              "command": "jest"
+            },
+            "metadata": {
+              "technologies": [
+                "jest"
+              ],
+              "description": "Run Jest Tests"
+            },
+            "cache": true,
+            "inputs": [
+              "default",
+              "^production",
+              {
+                "externalDependencies": [
+                  "jest"
+                ]
+              }
+            ],
+            "outputs": [
+              "{workspaceRoot}\\coverage\\libs\\state-service-lib"
+            ],
+            "executor": "nx:run-commands",
+            "configurations": {}
+          }
+        },
+        "name": "state-service-lib",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/state-service-lib/src",
+        "projectType": "library",
+        "tags": [],
+        "implicitDependencies": []
+      }
+    },
     "learning-01-e2e": {
       "name": "learning-01-e2e",
       "type": "e2e",
@@ -283,6 +346,69 @@
         "name": "learning-01",
         "$schema": "../../node_modules/nx/schemas/project-schema.json",
         "sourceRoot": "apps/learning-01/src",
+        "tags": [],
+        "implicitDependencies": []
+      }
+    },
+    "shared": {
+      "name": "shared",
+      "type": "lib",
+      "data": {
+        "root": "libs/shared",
+        "targets": {
+          "lint": {
+            "cache": true,
+            "options": {
+              "cwd": "libs/shared",
+              "command": "eslint ."
+            },
+            "inputs": [
+              "default",
+              "^default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{projectRoot}/.eslintrc.json",
+              "{workspaceRoot}/tools/eslint-rules/**/*",
+              {
+                "externalDependencies": [
+                  "eslint"
+                ]
+              }
+            ],
+            "executor": "nx:run-commands",
+            "configurations": {}
+          },
+          "test": {
+            "options": {
+              "cwd": "libs/shared",
+              "command": "jest"
+            },
+            "metadata": {
+              "technologies": [
+                "jest"
+              ],
+              "description": "Run Jest Tests"
+            },
+            "cache": true,
+            "inputs": [
+              "default",
+              "^production",
+              {
+                "externalDependencies": [
+                  "jest"
+                ]
+              }
+            ],
+            "outputs": [
+              "{workspaceRoot}\\coverage\\libs\\shared"
+            ],
+            "executor": "nx:run-commands",
+            "configurations": {}
+          }
+        },
+        "name": "shared",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/shared/src",
+        "projectType": "library",
         "tags": [],
         "implicitDependencies": []
       }
@@ -11389,6 +11515,7 @@
   },
   "dependencies": {
     "game-state-service": [],
+    "state-service-lib": [],
     "learning-01-e2e": [
       {
         "source": "learning-01-e2e",
@@ -11396,7 +11523,8 @@
         "type": "implicit"
       }
     ],
-    "learning-01": []
+    "learning-01": [],
+    "shared": []
   },
   "version": "6.0"
 }

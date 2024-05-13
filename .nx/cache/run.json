@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx run game-state-service:build --configuration=development",
+    "startTime": "2024-05-13T17:09:05.274Z",
+    "endTime": "2024-05-13T17:09:16.741Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "game-state-service:build:development",
+      "target": "build",
+      "projectName": "game-state-service",
+      "hash": "9821106557035326491",
+      "startTime": "2024-05-13T17:09:05.279Z",
+      "endTime": "2024-05-13T17:09:16.740Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
+}

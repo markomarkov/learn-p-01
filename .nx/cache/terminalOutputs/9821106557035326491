@@ -1,0 +1,66 @@
+asset main.02ad8548a00ecc19.js 20.7 KiB [emitted] [immutable] [minimized] (name: main)
+asset favicon.ico 14.7 KiB [emitted] [from: apps/game-state-service/src/favicon.ico] [copied]
+asset assets/.gitkeep 0 bytes [emitted] [from: apps/game-state-service/src/assets/.gitkeep] [copied]
+orphan modules 19.7 KiB [orphan] 8 modules
+runtime modules 274 bytes 1 module
+built modules 29.9 KiB [built]
+  ./apps/game-state-service/src/main.ts + 8 modules 20.3 KiB [not cacheable] [built] [code generated]
+  ./apps/game-state-service/src/app/app.element.css 9.6 KiB [built] [code generated] [1 error]
+
+ERROR in ./apps/game-state-service/src/app/app.element.css 4:5
+Module parse failed: Unexpected token (4:5)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+|  * Remove template code below
+|  */
+> html {
+|   -webkit-text-size-adjust: 100%;
+|   font-family:
+ @ ./apps/game-state-service/src/app/app.element.ts 1:0-27
+ @ ./apps/game-state-service/src/main.ts 1:0-27
+
+ERROR in ./apps/game-state-service/src/app/app.module.ts 5:0-58
+Module not found: Error: Can't resolve './config/services.config' in 'D:\ProgramingJS\learn-p-01\apps\game-state-service\src\app'
+ @ ./apps/game-state-service/src/main.ts 4:0-45 8:41-50
+
+ERROR in ./apps/game-state-service/src/app/app.module.ts 6:0-71
+Module not found: Error: Can't resolve './services/game-loop/game-loop.module' in 'D:\ProgramingJS\learn-p-01\apps\game-state-service\src\app'
+ @ ./apps/game-state-service/src/main.ts 4:0-45 8:41-50
+
+ERROR in ./apps/game-state-service/src/app/app.module.ts 7:0-77
+Module not found: Error: Can't resolve './services/game-number/game-number.module' in 'D:\ProgramingJS\learn-p-01\apps\game-state-service\src\app'
+ @ ./apps/game-state-service/src/main.ts 4:0-45 8:41-50
+
+ERROR in ./apps/game-state-service/src/app/app.module.ts:[32m[1m4:32[22m[39m
+[90mTS2307: [39mCannot find module './config/services.config' or its corresponding type declarations.
+  [0m [90m 2 |[39m [36mimport[39m { [33mConfigModule[39m } [36mfrom[39m [32m'@nestjs/config'[39m[33m;[39m
+   [90m 3 |[39m [36mimport[39m { [33mEventEmitterModule[39m } [36mfrom[39m [32m'@nestjs/event-emitter'[39m[33m;[39m
+  [31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { servicesConfig } [36mfrom[39m [32m'./config/services.config'[39m[33m;[39m
+   [90m   |[39m                                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 5 |[39m [36mimport[39m { [33mGameLoopModule[39m } [36mfrom[39m [32m'./services/game-loop/game-loop.module'[39m[33m;[39m
+   [90m 6 |[39m [36mimport[39m { [33mGameNumberModule[39m } [36mfrom[39m [32m'./services/game-number/game-number.module'[39m[33m;[39m
+   [90m 7 |[39m[0m
+
+ERROR in ./apps/game-state-service/src/app/app.module.ts:[32m[1m5:32[22m[39m
+[90mTS2307: [39mCannot find module './services/game-loop/game-loop.module' or its corresponding type declarations.
+  [0m [90m 3 |[39m [36mimport[39m { [33mEventEmitterModule[39m } [36mfrom[39m [32m'@nestjs/event-emitter'[39m[33m;[39m
+   [90m 4 |[39m [36mimport[39m { servicesConfig } [36mfrom[39m [32m'./config/services.config'[39m[33m;[39m
+  [31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m { [33mGameLoopModule[39m } [36mfrom[39m [32m'./services/game-loop/game-loop.module'[39m[33m;[39m
+   [90m   |[39m                                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 6 |[39m [36mimport[39m { [33mGameNumberModule[39m } [36mfrom[39m [32m'./services/game-number/game-number.module'[39m[33m;[39m
+   [90m 7 |[39m
+   [90m 8 |[39m [33m@[39m[33mModule[39m({[0m
+
+ERROR in ./apps/game-state-service/src/app/app.module.ts:[32m[1m6:34[22m[39m
+[90mTS2307: [39mCannot find module './services/game-number/game-number.module' or its corresponding type declarations.
+  [0m [90m 4 |[39m [36mimport[39m { servicesConfig } [36mfrom[39m [32m'./config/services.config'[39m[33m;[39m
+   [90m 5 |[39m [36mimport[39m { [33mGameLoopModule[39m } [36mfrom[39m [32m'./services/game-loop/game-loop.module'[39m[33m;[39m
+  [31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mGameNumberModule[39m } [36mfrom[39m [32m'./services/game-number/game-number.module'[39m[33m;[39m
+   [90m   |[39m                                  [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 7 |[39m
+   [90m 8 |[39m [33m@[39m[33mModule[39m({
+   [90m 9 |[39m   imports[33m:[39m [[0m
+
+3 errors have detailed information that is not shown.
+Use 'stats.errorDetails: true' resp. '--stats-error-details' to show it.
+
+webpack 5.91.0 compiled with 7 errors in 4664 ms

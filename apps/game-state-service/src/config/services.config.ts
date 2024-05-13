@@ -2,6 +2,7 @@ import { registerAs } from '@nestjs/config';
 import { DataSource, DataSourceOptions } from "typeorm";
 import { config as dotenvConfig } from 'dotenv';
 import { assertDefined } from '../utils/assertions';
+import { Options } from '@nestjs/common';
 
 dotenvConfig();
 
@@ -18,7 +19,10 @@ assertDefined(process.env.DATABASE_USERNAME, 'DATABASE_USERNAME is not defined')
 assertDefined(process.env.DATABASE_PASSWORD, 'DATABASE_PASSWORD is not defined');
 assertDefined(process.env.DATABASE_NAME, 'DATABASE_NAME is not defined');
 
-export const servicesConfig = registerAs('services', () => ({
+const TYPE_ORM_CONFIG_TOKEN = "typeorm";
+
+//typeORMConfig
+export const servicesConfig = registerAs( TYPE_ORM_CONFIG_TOKEN, () => ({
     gameService: {
         host: process.env.GAME_SERVICE_HOST,
         port: process.env.GAME_SERVICE_PORT,
@@ -42,7 +46,6 @@ export const servicesConfig = registerAs('services', () => ({
 }));
 
 export type ServicesConfig = ReturnType<typeof servicesConfig>;
-
 
 // export const dataSourceConfig = {
 //   type: process.env.DATABASE_TYPE as DataSourceOptions['type'],

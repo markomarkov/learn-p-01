@@ -28,7 +28,7 @@
       }
     }
   },
-  "2504189328218896680": {
+  "250575349055005623": {
     "targets": {
       "test": {
         "command": "jest",
@@ -53,6 +53,64 @@
         ],
         "outputs": [
           "{workspaceRoot}\\coverage\\apps\\game-state-service"
+        ]
+      }
+    }
+  },
+  "4324518743479203419": {
+    "targets": {
+      "test": {
+        "command": "jest",
+        "options": {
+          "cwd": "libs/shared"
+        },
+        "metadata": {
+          "technologies": [
+            "jest"
+          ],
+          "description": "Run Jest Tests"
+        },
+        "cache": true,
+        "inputs": [
+          "default",
+          "^production",
+          {
+            "externalDependencies": [
+              "jest"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}\\coverage\\libs\\shared"
+        ]
+      }
+    }
+  },
+  "13701373410706799469": {
+    "targets": {
+      "test": {
+        "command": "jest",
+        "options": {
+          "cwd": "libs/state-service-lib"
+        },
+        "metadata": {
+          "technologies": [
+            "jest"
+          ],
+          "description": "Run Jest Tests"
+        },
+        "cache": true,
+        "inputs": [
+          "default",
+          "^production",
+          {
+            "externalDependencies": [
+              "jest"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}\\coverage\\libs\\state-service-lib"
         ]
       }
     }
