@@ -54,6 +54,12 @@
     "webpack-cli": "^5.1.4"
   },
   "pathMappings": {
+    "@learn-p-01/shared": [
+      "libs/shared/src/index.ts"
+    ],
+    "@learn-p-01/state-service-lib": [
+      "libs/state-service-lib/src/index.ts"
+    ],
     "@learn-p-01/state-service-sdk": [
       "state-service-sdk/src/index.ts"
     ]
@@ -125,7 +131,8 @@
           "hash": "17266565263517482266",
           "deps": [
             "npm:@nestjs/common",
-            "npm:"
+            "npm:@nestjs/config",
+            "npm:@nestjs/event-emitter"
           ]
         },
         {
@@ -134,7 +141,12 @@
         },
         {
           "file": "apps/game-state-service/src/config/services.config.ts",
-          "hash": "3244421341483603138"
+          "hash": "3244421341483603138",
+          "deps": [
+            "npm:@nestjs/config",
+            "npm:typeorm",
+            "npm:dotenv"
+          ]
         },
         {
           "file": "apps/game-state-service/src/favicon.ico",
