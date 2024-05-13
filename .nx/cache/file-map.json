@@ -4,6 +4,7 @@
   "deps": {
     "@nestjs/common": "^10.0.2",
     "@nestjs/core": "^10.0.2",
+    "@nestjs/microservices": "10.3.8",
     "@nestjs/platform-express": "^10.0.2",
     "axios": "^1.6.7",
     "core-js": "3.34.0",
@@ -129,84 +130,6 @@
           "hash": "15391097975841359511"
         }
       ],
-      "game-state-service": [
-        {
-          "file": "apps/game-state-service/.eslintrc.json",
-          "hash": "14921153827776288937"
-        },
-        {
-          "file": "apps/game-state-service/.swcrc",
-          "hash": "9448684243471363461"
-        },
-        {
-          "file": "apps/game-state-service/jest.config.ts",
-          "hash": "14819320378457985846"
-        },
-        {
-          "file": "apps/game-state-service/project.json",
-          "hash": "9632934746904593722"
-        },
-        {
-          "file": "apps/game-state-service/src/app/app.element.css",
-          "hash": "8896620862805756811"
-        },
-        {
-          "file": "apps/game-state-service/src/app/app.element.spec.ts",
-          "hash": "10340014775905134236"
-        },
-        {
-          "file": "apps/game-state-service/src/app/app.element.ts",
-          "hash": "16304159469867294186"
-        },
-        {
-          "file": "apps/game-state-service/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/game-state-service/src/favicon.ico",
-          "hash": "9303420814833116677"
-        },
-        {
-          "file": "apps/game-state-service/src/index.html",
-          "hash": "14606528721039180005"
-        },
-        {
-          "file": "apps/game-state-service/src/main.ts",
-          "hash": "7089803718854622436",
-          "deps": [
-            "npm:@nestjs/core",
-            "npm:@nestjs/common/interfaces/microservices/nest-microservice-options.interface"
-          ]
-        },
-        {
-          "file": "apps/game-state-service/src/styles.css",
-          "hash": "2917954890128038984"
-        },
-        {
-          "file": "apps/game-state-service/src/test-setup.ts",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/game-state-service/tsconfig.app.json",
-          "hash": "14061353933753513581"
-        },
-        {
-          "file": "apps/game-state-service/tsconfig.json",
-          "hash": "17844214084672627494"
-        },
-        {
-          "file": "apps/game-state-service/tsconfig.spec.json",
-          "hash": "2930041746242100632"
-        },
-        {
-          "file": "apps/game-state-service/webpack.config.js",
-          "hash": "7729000402195314189",
-          "deps": [
-            "npm:@nx/webpack",
-            "npm:path"
-          ]
-        }
-      ],
       "learning-01": [
         {
           "file": "apps/learning-01/.eslintrc.json",
@@ -287,6 +210,105 @@
             "npm:path"
           ]
         }
+      ],
+      "game-state-service": [
+        {
+          "file": "apps/game-state-service/.eslintrc.json",
+          "hash": "14921153827776288937"
+        },
+        {
+          "file": "apps/game-state-service/.swcrc",
+          "hash": "9448684243471363461"
+        },
+        {
+          "file": "apps/game-state-service/jest.config.ts",
+          "hash": "14819320378457985846"
+        },
+        {
+          "file": "apps/game-state-service/project.json",
+          "hash": "11955645881119731063"
+        },
+        {
+          "file": "apps/game-state-service/src/.env.example",
+          "hash": "15369382945136131792"
+        },
+        {
+          "file": "apps/game-state-service/src/app/app.element.css",
+          "hash": "8896620862805756811"
+        },
+        {
+          "file": "apps/game-state-service/src/app/app.element.spec.ts",
+          "hash": "10340014775905134236"
+        },
+        {
+          "file": "apps/game-state-service/src/app/app.element.ts",
+          "hash": "16304159469867294186"
+        },
+        {
+          "file": "apps/game-state-service/src/app/app.module.ts",
+          "hash": "17266565263517482266"
+        },
+        {
+          "file": "apps/game-state-service/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/game-state-service/src/config/services.config.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/game-state-service/src/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/game-state-service/src/index.html",
+          "hash": "14606528721039180005"
+        },
+        {
+          "file": "apps/game-state-service/src/main.ts",
+          "hash": "9931336213857901862",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/core",
+            "npm:@nestjs/microservices"
+          ]
+        },
+        {
+          "file": "apps/game-state-service/src/styles.css",
+          "hash": "2917954890128038984"
+        },
+        {
+          "file": "apps/game-state-service/src/test-setup.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/game-state-service/src/utils/assertions.ts",
+          "hash": "15842621221075497025",
+          "deps": [
+            "npm:assert",
+            "npm:xstate"
+          ]
+        },
+        {
+          "file": "apps/game-state-service/tsconfig.app.json",
+          "hash": "8560610324945985469"
+        },
+        {
+          "file": "apps/game-state-service/tsconfig.json",
+          "hash": "8036392501322474590"
+        },
+        {
+          "file": "apps/game-state-service/tsconfig.spec.json",
+          "hash": "2930041746242100632"
+        },
+        {
+          "file": "apps/game-state-service/webpack.config.js",
+          "hash": "7729000402195314189",
+          "deps": [
+            "npm:@nx/webpack",
+            "npm:path"
+          ]
+        }
       ]
     },
     "nonProjectFiles": [
@@ -356,11 +378,11 @@
       },
       {
         "file": "package.json",
-        "hash": "16399452142351553542"
+        "hash": "7230896720925379391"
       },
       {
         "file": "pnpm-lock.yaml",
-        "hash": "13397676895642300840"
+        "hash": "9068633748277002260"
       },
       {
         "file": "tsconfig.base.json",
