@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { EventEmitterModule } from '@nestjs/event-emitter';
-import { servicesConfig } from './config/services.config';
+import { servicesConfig } from '../config/services.config';
 import { GameLoopModule } from './services/game-loop/game-loop.module';
 import { GameNumberModule } from './services/game-number/game-number.module';
 

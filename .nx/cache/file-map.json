@@ -9,6 +9,7 @@
     "@nestjs/event-emitter": "^2.0.4",
     "@nestjs/microservices": "10.3.8",
     "@nestjs/platform-express": "^10.3.8",
+    "@nestjs/swagger": "^7.3.1",
     "axios": "^1.6.8",
     "core-js": "3.34.0",
     "dotenv": "^16.4.5",
@@ -94,198 +95,6 @@
   ],
   "fileMap": {
     "projectFileMap": {
-      "state-service-lib": [
-        {
-          "file": "libs/state-service-lib/.eslintrc.json",
-          "hash": "13800677001662881425"
-        },
-        {
-          "file": "libs/state-service-lib/README.md",
-          "hash": "4037543331501357584"
-        },
-        {
-          "file": "libs/state-service-lib/jest.config.ts",
-          "hash": "6333159537456587913"
-        },
-        {
-          "file": "libs/state-service-lib/project.json",
-          "hash": "11655021971004102824"
-        },
-        {
-          "file": "libs/state-service-lib/src/index.ts",
-          "hash": "15845932276781104708"
-        },
-        {
-          "file": "libs/state-service-lib/src/lib/state-service-lib.module.ts",
-          "hash": "10585678974435089660",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "libs/state-service-lib/tsconfig.json",
-          "hash": "5840880287502376438"
-        },
-        {
-          "file": "libs/state-service-lib/tsconfig.lib.json",
-          "hash": "3550173832616418300"
-        },
-        {
-          "file": "libs/state-service-lib/tsconfig.spec.json",
-          "hash": "6898991939206723030"
-        }
-      ],
-      "shared": [
-        {
-          "file": "libs/shared/.eslintrc.json",
-          "hash": "13800677001662881425"
-        },
-        {
-          "file": "libs/shared/README.md",
-          "hash": "4177710660839030163"
-        },
-        {
-          "file": "libs/shared/jest.config.ts",
-          "hash": "4739188552431792008"
-        },
-        {
-          "file": "libs/shared/project.json",
-          "hash": "2214406144155872643"
-        },
-        {
-          "file": "libs/shared/src/index.ts",
-          "hash": "14556581362216704711"
-        },
-        {
-          "file": "libs/shared/src/lib/shared.module.ts",
-          "hash": "11646460083537414907",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "libs/shared/tsconfig.json",
-          "hash": "5840880287502376438"
-        },
-        {
-          "file": "libs/shared/tsconfig.lib.json",
-          "hash": "3550173832616418300"
-        },
-        {
-          "file": "libs/shared/tsconfig.spec.json",
-          "hash": "6898991939206723030"
-        }
-      ],
-      "game-state-service": [
-        {
-          "file": "apps/game-state-service/.eslintrc.json",
-          "hash": "14921153827776288937"
-        },
-        {
-          "file": "apps/game-state-service/.swcrc",
-          "hash": "9448684243471363461"
-        },
-        {
-          "file": "apps/game-state-service/jest.config.ts",
-          "hash": "14819320378457985846"
-        },
-        {
-          "file": "apps/game-state-service/project.json",
-          "hash": "11955645881119731063"
-        },
-        {
-          "file": "apps/game-state-service/src/.env.example",
-          "hash": "15369382945136131792"
-        },
-        {
-          "file": "apps/game-state-service/src/app/app.element.css",
-          "hash": "8896620862805756811"
-        },
-        {
-          "file": "apps/game-state-service/src/app/app.element.spec.ts",
-          "hash": "10340014775905134236"
-        },
-        {
-          "file": "apps/game-state-service/src/app/app.element.ts",
-          "hash": "16304159469867294186"
-        },
-        {
-          "file": "apps/game-state-service/src/app/app.module.ts",
-          "hash": "11281022075070996481",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/config",
-            "npm:@nestjs/event-emitter"
-          ]
-        },
-        {
-          "file": "apps/game-state-service/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/game-state-service/src/config/services.config.ts",
-          "hash": "15871561515519908947",
-          "deps": [
-            "npm:@nestjs/config",
-            "npm:typeorm",
-            "npm:dotenv",
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "apps/game-state-service/src/favicon.ico",
-          "hash": "9303420814833116677"
-        },
-        {
-          "file": "apps/game-state-service/src/index.html",
-          "hash": "14606528721039180005"
-        },
-        {
-          "file": "apps/game-state-service/src/main.ts",
-          "hash": "9931336213857901862",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/core",
-            "npm:@nestjs/microservices"
-          ]
-        },
-        {
-          "file": "apps/game-state-service/src/styles.css",
-          "hash": "2917954890128038984"
-        },
-        {
-          "file": "apps/game-state-service/src/test-setup.ts",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/game-state-service/src/utils/assertions.ts",
-          "hash": "15842621221075497025",
-          "deps": [
-            "npm:assert",
-            "npm:xstate"
-          ]
-        },
-        {
-          "file": "apps/game-state-service/tsconfig.app.json",
-          "hash": "8560610324945985469"
-        },
-        {
-          "file": "apps/game-state-service/tsconfig.json",
-          "hash": "8036392501322474590"
-        },
-        {
-          "file": "apps/game-state-service/tsconfig.spec.json",
-          "hash": "2930041746242100632"
-        },
-        {
-          "file": "apps/game-state-service/webpack.config.js",
-          "hash": "7729000402195314189",
-          "deps": [
-            "npm:@nx/webpack",
-            "npm:path"
-          ]
-        }
-      ],
       "learning-01": [
         {
           "file": "apps/learning-01/.eslintrc.json",
@@ -367,6 +176,100 @@
           ]
         }
       ],
+      "game-state-service": [
+        {
+          "file": "apps/game-state-service/.env.example",
+          "hash": "15369382945136131792"
+        },
+        {
+          "file": "apps/game-state-service/.eslintrc.json",
+          "hash": "14921153827776288937"
+        },
+        {
+          "file": "apps/game-state-service/.swcrc",
+          "hash": "9448684243471363461"
+        },
+        {
+          "file": "apps/game-state-service/jest.config.ts",
+          "hash": "14819320378457985846"
+        },
+        {
+          "file": "apps/game-state-service/project.json",
+          "hash": "11955645881119731063"
+        },
+        {
+          "file": "apps/game-state-service/src/app/app.module.ts",
+          "hash": "734602482905663856",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/config",
+            "npm:@nestjs/event-emitter"
+          ]
+        },
+        {
+          "file": "apps/game-state-service/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/game-state-service/src/config/services.config.ts",
+          "hash": "15798079078308983105",
+          "deps": [
+            "npm:@nestjs/config",
+            "npm:typeorm",
+            "npm:dotenv",
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/game-state-service/src/controllers/game-loop.controler.ts",
+          "hash": "2675220698359474643",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/swagger"
+          ]
+        },
+        {
+          "file": "apps/game-state-service/src/main.ts",
+          "hash": "9931336213857901862",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/core",
+            "npm:@nestjs/microservices"
+          ]
+        },
+        {
+          "file": "apps/game-state-service/src/test-setup.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/game-state-service/src/utils/assertions.ts",
+          "hash": "15842621221075497025",
+          "deps": [
+            "npm:assert",
+            "npm:xstate"
+          ]
+        },
+        {
+          "file": "apps/game-state-service/tsconfig.app.json",
+          "hash": "8560610324945985469"
+        },
+        {
+          "file": "apps/game-state-service/tsconfig.json",
+          "hash": "8036392501322474590"
+        },
+        {
+          "file": "apps/game-state-service/tsconfig.spec.json",
+          "hash": "2930041746242100632"
+        },
+        {
+          "file": "apps/game-state-service/webpack.config.js",
+          "hash": "7729000402195314189",
+          "deps": [
+            "npm:@nx/webpack",
+            "npm:path"
+          ]
+        }
+      ],
       "learning-01-e2e": [
         {
           "file": "apps/learning-01-e2e/.eslintrc.json",
@@ -409,6 +312,88 @@
         {
           "file": "apps/learning-01-e2e/tsconfig.spec.json",
           "hash": "15391097975841359511"
+        }
+      ],
+      "shared": [
+        {
+          "file": "libs/shared/.eslintrc.json",
+          "hash": "13800677001662881425"
+        },
+        {
+          "file": "libs/shared/README.md",
+          "hash": "4177710660839030163"
+        },
+        {
+          "file": "libs/shared/jest.config.ts",
+          "hash": "4739188552431792008"
+        },
+        {
+          "file": "libs/shared/project.json",
+          "hash": "2214406144155872643"
+        },
+        {
+          "file": "libs/shared/src/index.ts",
+          "hash": "14556581362216704711"
+        },
+        {
+          "file": "libs/shared/src/lib/shared.module.ts",
+          "hash": "11646460083537414907",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "libs/shared/tsconfig.json",
+          "hash": "5840880287502376438"
+        },
+        {
+          "file": "libs/shared/tsconfig.lib.json",
+          "hash": "3550173832616418300"
+        },
+        {
+          "file": "libs/shared/tsconfig.spec.json",
+          "hash": "6898991939206723030"
+        }
+      ],
+      "state-service-lib": [
+        {
+          "file": "libs/state-service-lib/.eslintrc.json",
+          "hash": "13800677001662881425"
+        },
+        {
+          "file": "libs/state-service-lib/README.md",
+          "hash": "4037543331501357584"
+        },
+        {
+          "file": "libs/state-service-lib/jest.config.ts",
+          "hash": "6333159537456587913"
+        },
+        {
+          "file": "libs/state-service-lib/project.json",
+          "hash": "11655021971004102824"
+        },
+        {
+          "file": "libs/state-service-lib/src/index.ts",
+          "hash": "15845932276781104708"
+        },
+        {
+          "file": "libs/state-service-lib/src/lib/state-service-lib.module.ts",
+          "hash": "10585678974435089660",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "libs/state-service-lib/tsconfig.json",
+          "hash": "5840880287502376438"
+        },
+        {
+          "file": "libs/state-service-lib/tsconfig.lib.json",
+          "hash": "3550173832616418300"
+        },
+        {
+          "file": "libs/state-service-lib/tsconfig.spec.json",
+          "hash": "6898991939206723030"
         }
       ]
     },
@@ -479,11 +464,11 @@
       },
       {
         "file": "package.json",
-        "hash": "15384324438470762777"
+        "hash": "13471037099870070066"
       },
       {
         "file": "pnpm-lock.yaml",
-        "hash": "17738264343227452409"
+        "hash": "421219773660380564"
       },
       {
         "file": "tsconfig.base.json",

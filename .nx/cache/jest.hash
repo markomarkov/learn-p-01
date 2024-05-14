@@ -1,4 +1,33 @@
 {
+  "15040341280666000794": {
+    "targets": {
+      "test": {
+        "command": "jest",
+        "options": {
+          "cwd": "apps/game-state-service"
+        },
+        "metadata": {
+          "technologies": [
+            "jest"
+          ],
+          "description": "Run Jest Tests"
+        },
+        "cache": true,
+        "inputs": [
+          "default",
+          "^production",
+          {
+            "externalDependencies": [
+              "jest"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}\\coverage\\apps\\game-state-service"
+        ]
+      }
+    }
+  },
   "7392399462930191492": {
     "targets": {
       "test": {
@@ -24,35 +53,6 @@
         ],
         "outputs": [
           "{workspaceRoot}\\coverage\\apps\\learning-01"
-        ]
-      }
-    }
-  },
-  "250575349055005623": {
-    "targets": {
-      "test": {
-        "command": "jest",
-        "options": {
-          "cwd": "apps/game-state-service"
-        },
-        "metadata": {
-          "technologies": [
-            "jest"
-          ],
-          "description": "Run Jest Tests"
-        },
-        "cache": true,
-        "inputs": [
-          "default",
-          "^production",
-          {
-            "externalDependencies": [
-              "jest"
-            ]
-          }
-        ],
-        "outputs": [
-          "{workspaceRoot}\\coverage\\apps\\game-state-service"
         ]
       }
     }

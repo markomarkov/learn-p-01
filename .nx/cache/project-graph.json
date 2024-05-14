@@ -1882,6 +1882,15 @@
         "hash": "sha512-Z7C/xXCiGWsg0KuKsHTKJxbWhpI3Vs5GwLfOean7MGyVFGqdRgBbAjOCh6u4bbjPc/8MJ2pZmK/0DLdCbivLDA=="
       }
     },
+    "npm:@microsoft/tsdoc@0.14.2": {
+      "type": "npm",
+      "name": "npm:@microsoft/tsdoc@0.14.2",
+      "data": {
+        "version": "@microsoft/tsdoc@0.14.2",
+        "packageName": "@microsoft/tsdoc@0.14.2",
+        "hash": "sha512-9b8mPpKrfeGRuhFH5iO1iwCLeIIsV6+H1sRfxbkoGXIyQE2BTsPd9zqSqQJ+pv5sJ/hT5M1zvOFL02MnEezFug=="
+      }
+    },
     "npm:@mole-inc/bin-wrapper@8.0.1": {
       "type": "npm",
       "name": "npm:@mole-inc/bin-wrapper@8.0.1",
@@ -1936,6 +1945,15 @@
         "hash": "sha512-quMiw8yOwoSul0pp3mOonGz8EyXWHSBTqBy8B0TbYYgpnG1Ix2wGUnuTksLWaaBiiOTDhciaZ41Y5fJZsSJE1Q=="
       }
     },
+    "npm:@nestjs/mapped-types@2.0.5": {
+      "type": "npm",
+      "name": "npm:@nestjs/mapped-types@2.0.5",
+      "data": {
+        "version": "@nestjs/mapped-types@2.0.5",
+        "packageName": "@nestjs/mapped-types@2.0.5",
+        "hash": "sha512-bSJv4pd6EY99NX9CjBIyn4TVDoSit82DUZlL4I3bqNfy5Gt+gXTa86i3I/i0iIV9P4hntcGM5GyO+FhZAhxtyg=="
+      }
+    },
     "npm:@nestjs/microservices@10.3.8": {
       "type": "npm",
       "name": "npm:@nestjs/microservices@10.3.8",
@@ -1970,6 +1988,15 @@
         "version": "@nestjs/schematics@9.2.0",
         "packageName": "@nestjs/schematics@9.2.0",
         "hash": "sha512-wHpNJDPzM6XtZUOB3gW0J6mkFCSJilzCM3XrHI1o0C8vZmFE1snbmkIXNyoi1eV0Nxh1BMymcgz5vIMJgQtTqw=="
+      }
+    },
+    "npm:@nestjs/swagger@7.3.1": {
+      "type": "npm",
+      "name": "npm:@nestjs/swagger@7.3.1",
+      "data": {
+        "version": "@nestjs/swagger@7.3.1",
+        "packageName": "@nestjs/swagger@7.3.1",
+        "hash": "sha512-LUC4mr+5oAleEC/a2j8pNRh1S5xhKXJ1Gal5ZdRjt9XebQgbngXCdW7JTA9WOEcwGtFZN9EnKYdquzH971LZfw=="
       }
     },
     "npm:@nestjs/testing@10.3.8": {
@@ -10511,6 +10538,15 @@
         "version": "svgo@3.3.2",
         "packageName": "svgo@3.3.2",
         "hash": "sha512-OoohrmuUlBs8B8o6MB2Aevn+pRIH9zDALSR+6hhqVfa6fRwG/Qw9VUMSMW9VNg2CFc/MTIfabtdOVl9ODIJjpw=="
+      }
+    },
+    "npm:swagger-ui-dist@5.11.2": {
+      "type": "npm",
+      "name": "npm:swagger-ui-dist@5.11.2",
+      "data": {
+        "version": "swagger-ui-dist@5.11.2",
+        "packageName": "swagger-ui-dist@5.11.2",
+        "hash": "sha512-jQG0cRgJNMZ7aCoiFofnoojeSaa/+KgWaDlfgs8QN+BXoGMpxeMVY5OEnjq4OlNvF3yjftO8c9GRAgcHlO+u7A=="
       }
     },
     "npm:swc-loader@0.1.15": {

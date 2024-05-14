@@ -45,7 +45,7 @@ export const servicesConfig = registerAs( TYPE_ORM_CONFIG_TOKEN, () => ({
     } as unknown as DataSource,
 }));
 
-export type ServicesConfig = ReturnType<typeof servicesConfig>;
+export type ServicesConfigType = ReturnType<typeof servicesConfig>;
 
 // export const dataSourceConfig = {
 //   type: process.env.DATABASE_TYPE as DataSourceOptions['type'],
