@@ -2008,6 +2008,15 @@
         "hash": "sha512-hpX9das2TdFTKQ4/2ojhjI6YgXtCfXRKui3A4Qaj54VVzc5+mtK502Jj18Vzji98o9MVS6skmYu+S/UvW3U6Fw=="
       }
     },
+    "npm:@nestjs/typeorm@10.0.2": {
+      "type": "npm",
+      "name": "npm:@nestjs/typeorm@10.0.2",
+      "data": {
+        "version": "@nestjs/typeorm@10.0.2",
+        "packageName": "@nestjs/typeorm@10.0.2",
+        "hash": "sha512-H738bJyydK4SQkRCTeh1aFBxoO1E9xdL/HaLGThwrqN95os5mEyAtK7BLADOS+vldP4jDZ2VQPLj4epWwRqCeQ=="
+      }
+    },
     "npm:@nodelib/fs.scandir@2.1.5": {
       "type": "npm",
       "name": "npm:@nodelib/fs.scandir@2.1.5",
