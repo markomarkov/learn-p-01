@@ -11,7 +11,7 @@
     "@nestjs/platform-express": "^10.3.8",
     "@nestjs/swagger": "^7.3.1",
     "@nestjs/typeorm": "^10.0.2",
-    "axios": "^1.7.2",
+    "axios": "^1.6.8",
     "core-js": "3.34.0",
     "dotenv": "^16.4.5",
     "reflect-metadata": "^0.1.14",
@@ -38,9 +38,9 @@
     "@swc/jest": "0.2.20",
     "@types/jest": "^29.5.12",
     "@types/node": "~18.16.20",
-    "@typescript-eslint/eslint-plugin": "^7.10.0",
-    "@typescript-eslint/parser": "^7.10.0",
-    "cypress": "^13.10.0",
+    "@typescript-eslint/eslint-plugin": "^7.8.0",
+    "@typescript-eslint/parser": "^7.8.0",
+    "cypress": "^13.9.0",
     "eslint": "~8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-cypress": "^2.15.2",
@@ -50,7 +50,7 @@
     "nx": "18.3.4",
     "prettier": "^3.2.5",
     "swc-loader": "0.1.15",
-    "ts-jest": "^29.1.3",
+    "ts-jest": "^29.1.2",
     "ts-node": "10.9.1",
     "typescript": "~5.4.5",
     "webpack-cli": "^5.1.4"
@@ -96,50 +96,6 @@
   ],
   "fileMap": {
     "projectFileMap": {
-      "learning-01-e2e": [
-        {
-          "file": "apps/learning-01-e2e/.eslintrc.json",
-          "hash": "12312091713424603791"
-        },
-        {
-          "file": "apps/learning-01-e2e/jest.config.ts",
-          "hash": "6438141914064492554"
-        },
-        {
-          "file": "apps/learning-01-e2e/project.json",
-          "hash": "1738060370950468656"
-        },
-        {
-          "file": "apps/learning-01-e2e/src/learning-01/learning-01.spec.ts",
-          "hash": "2017613395748408322",
-          "deps": [
-            "npm:axios"
-          ]
-        },
-        {
-          "file": "apps/learning-01-e2e/src/support/global-setup.ts",
-          "hash": "2115715198266229230"
-        },
-        {
-          "file": "apps/learning-01-e2e/src/support/global-teardown.ts",
-          "hash": "8548088892264703398"
-        },
-        {
-          "file": "apps/learning-01-e2e/src/support/test-setup.ts",
-          "hash": "7089735238924345502",
-          "deps": [
-            "npm:axios"
-          ]
-        },
-        {
-          "file": "apps/learning-01-e2e/tsconfig.json",
-          "hash": "1422418700492434985"
-        },
-        {
-          "file": "apps/learning-01-e2e/tsconfig.spec.json",
-          "hash": "15391097975841359511"
-        }
-      ],
       "shared": [
         {
           "file": "libs/shared/.eslintrc.json",
@@ -191,6 +147,50 @@
         {
           "file": "libs/shared/tsconfig.spec.json",
           "hash": "6898991939206723030"
+        }
+      ],
+      "learning-01-e2e": [
+        {
+          "file": "apps/learning-01-e2e/.eslintrc.json",
+          "hash": "12312091713424603791"
+        },
+        {
+          "file": "apps/learning-01-e2e/jest.config.ts",
+          "hash": "6438141914064492554"
+        },
+        {
+          "file": "apps/learning-01-e2e/project.json",
+          "hash": "1738060370950468656"
+        },
+        {
+          "file": "apps/learning-01-e2e/src/learning-01/learning-01.spec.ts",
+          "hash": "2017613395748408322",
+          "deps": [
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "apps/learning-01-e2e/src/support/global-setup.ts",
+          "hash": "2115715198266229230"
+        },
+        {
+          "file": "apps/learning-01-e2e/src/support/global-teardown.ts",
+          "hash": "8548088892264703398"
+        },
+        {
+          "file": "apps/learning-01-e2e/src/support/test-setup.ts",
+          "hash": "7089735238924345502",
+          "deps": [
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "apps/learning-01-e2e/tsconfig.json",
+          "hash": "1422418700492434985"
+        },
+        {
+          "file": "apps/learning-01-e2e/tsconfig.spec.json",
+          "hash": "15391097975841359511"
         }
       ],
       "state-service-lib": [
