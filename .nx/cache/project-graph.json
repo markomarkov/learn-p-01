@@ -255,7 +255,7 @@
               }
             ],
             "outputs": [
-              "{workspaceRoot}/dist\\apps\\learning-01"
+              "{workspaceRoot}/dist/{projectRoot}"
             ],
             "executor": "nx:run-commands",
             "configurations": {}
@@ -3500,6 +3500,15 @@
         "version": "ajv@8.14.0",
         "packageName": "ajv@8.14.0",
         "hash": "sha512-oYs1UUtO97ZO2lJ4bwnWeQW8/zvOIQLGKcvPTsWmvc2SYgBb+upuNS5NxoLaMU4h8Ju3Nbj6Cq8mD2LQoqVKFA=="
+      }
+    },
+    "npm:all@0.0.0": {
+      "type": "npm",
+      "name": "npm:all@0.0.0",
+      "data": {
+        "version": "all@0.0.0",
+        "packageName": "all@0.0.0",
+        "hash": "sha512-0oKlfNVv2d+d7c1gwjGspzgbwot47PGQ4b3v1ccx4mR8l9P/Y6E6Dr/yE8lNT63EcAKEbHo6UG3odDpC/NQcKw=="
       }
     },
     "npm:ansi-colors@4.1.3": {

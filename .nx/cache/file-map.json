@@ -11,6 +11,7 @@
     "@nestjs/platform-express": "^10.3.8",
     "@nestjs/swagger": "^7.3.1",
     "@nestjs/typeorm": "^10.0.2",
+    "all": "^0.0.0",
     "axios": "^1.7.2",
     "core-js": "3.34.0",
     "dotenv": "^16.4.5",
@@ -96,6 +97,47 @@
   ],
   "fileMap": {
     "projectFileMap": {
+      "state-service-lib": [
+        {
+          "file": "libs/state-service-lib/.eslintrc.json",
+          "hash": "13800677001662881425"
+        },
+        {
+          "file": "libs/state-service-lib/README.md",
+          "hash": "4037543331501357584"
+        },
+        {
+          "file": "libs/state-service-lib/jest.config.ts",
+          "hash": "6333159537456587913"
+        },
+        {
+          "file": "libs/state-service-lib/project.json",
+          "hash": "11655021971004102824"
+        },
+        {
+          "file": "libs/state-service-lib/src/index.ts",
+          "hash": "15845932276781104708"
+        },
+        {
+          "file": "libs/state-service-lib/src/lib/state-service-lib.module.ts",
+          "hash": "10585678974435089660",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "libs/state-service-lib/tsconfig.json",
+          "hash": "5840880287502376438"
+        },
+        {
+          "file": "libs/state-service-lib/tsconfig.lib.json",
+          "hash": "3550173832616418300"
+        },
+        {
+          "file": "libs/state-service-lib/tsconfig.spec.json",
+          "hash": "6898991939206723030"
+        }
+      ],
       "game-state-service": [
         {
           "file": "apps/game-state-service/.env.example",
@@ -284,6 +326,50 @@
           "hash": "6898991939206723030"
         }
       ],
+      "learning-01-e2e": [
+        {
+          "file": "apps/learning-01-e2e/.eslintrc.json",
+          "hash": "12312091713424603791"
+        },
+        {
+          "file": "apps/learning-01-e2e/jest.config.ts",
+          "hash": "6438141914064492554"
+        },
+        {
+          "file": "apps/learning-01-e2e/project.json",
+          "hash": "1738060370950468656"
+        },
+        {
+          "file": "apps/learning-01-e2e/src/learning-01/learning-01.spec.ts",
+          "hash": "2017613395748408322",
+          "deps": [
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "apps/learning-01-e2e/src/support/global-setup.ts",
+          "hash": "2115715198266229230"
+        },
+        {
+          "file": "apps/learning-01-e2e/src/support/global-teardown.ts",
+          "hash": "8548088892264703398"
+        },
+        {
+          "file": "apps/learning-01-e2e/src/support/test-setup.ts",
+          "hash": "7089735238924345502",
+          "deps": [
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "apps/learning-01-e2e/tsconfig.json",
+          "hash": "1422418700492434985"
+        },
+        {
+          "file": "apps/learning-01-e2e/tsconfig.spec.json",
+          "hash": "15391097975841359511"
+        }
+      ],
       "learning-01": [
         {
           "file": "apps/learning-01/.eslintrc.json",
@@ -358,96 +444,11 @@
         },
         {
           "file": "apps/learning-01/webpack.config.js",
-          "hash": "10991691899849727633",
+          "hash": "13608834635683489203",
           "deps": [
             "npm:@nx/webpack",
             "npm:path"
           ]
-        }
-      ],
-      "learning-01-e2e": [
-        {
-          "file": "apps/learning-01-e2e/.eslintrc.json",
-          "hash": "12312091713424603791"
-        },
-        {
-          "file": "apps/learning-01-e2e/jest.config.ts",
-          "hash": "6438141914064492554"
-        },
-        {
-          "file": "apps/learning-01-e2e/project.json",
-          "hash": "1738060370950468656"
-        },
-        {
-          "file": "apps/learning-01-e2e/src/learning-01/learning-01.spec.ts",
-          "hash": "2017613395748408322",
-          "deps": [
-            "npm:axios"
-          ]
-        },
-        {
-          "file": "apps/learning-01-e2e/src/support/global-setup.ts",
-          "hash": "2115715198266229230"
-        },
-        {
-          "file": "apps/learning-01-e2e/src/support/global-teardown.ts",
-          "hash": "8548088892264703398"
-        },
-        {
-          "file": "apps/learning-01-e2e/src/support/test-setup.ts",
-          "hash": "7089735238924345502",
-          "deps": [
-            "npm:axios"
-          ]
-        },
-        {
-          "file": "apps/learning-01-e2e/tsconfig.json",
-          "hash": "1422418700492434985"
-        },
-        {
-          "file": "apps/learning-01-e2e/tsconfig.spec.json",
-          "hash": "15391097975841359511"
-        }
-      ],
-      "state-service-lib": [
-        {
-          "file": "libs/state-service-lib/.eslintrc.json",
-          "hash": "13800677001662881425"
-        },
-        {
-          "file": "libs/state-service-lib/README.md",
-          "hash": "4037543331501357584"
-        },
-        {
-          "file": "libs/state-service-lib/jest.config.ts",
-          "hash": "6333159537456587913"
-        },
-        {
-          "file": "libs/state-service-lib/project.json",
-          "hash": "11655021971004102824"
-        },
-        {
-          "file": "libs/state-service-lib/src/index.ts",
-          "hash": "15845932276781104708"
-        },
-        {
-          "file": "libs/state-service-lib/src/lib/state-service-lib.module.ts",
-          "hash": "10585678974435089660",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "libs/state-service-lib/tsconfig.json",
-          "hash": "5840880287502376438"
-        },
-        {
-          "file": "libs/state-service-lib/tsconfig.lib.json",
-          "hash": "3550173832616418300"
-        },
-        {
-          "file": "libs/state-service-lib/tsconfig.spec.json",
-          "hash": "6898991939206723030"
         }
       ]
     },
@@ -466,7 +467,7 @@
       },
       {
         "file": ".gitignore",
-        "hash": "18318511172391054080"
+        "hash": "12453964078203311794"
       },
       {
         "file": ".gitignore2",
@@ -513,16 +514,12 @@
         "hash": "17534365334411485342"
       },
       {
-        "file": "package-lock.json",
-        "hash": "5970967069460556395"
-      },
-      {
         "file": "package.json",
-        "hash": "331989673620369927"
+        "hash": "7698358752766443787"
       },
       {
         "file": "pnpm-lock.yaml",
-        "hash": "7514840412621718048"
+        "hash": "4365196965139460576"
       },
       {
         "file": "tsconfig.base.json",
